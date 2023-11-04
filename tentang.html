@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>DESA WARUNGMENTENG</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Muli:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Vue.Js File -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+
+<body>
+
+  <div id="vapp">
+    <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"> DESA WARUNGMENTENG </a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li v-for="item in list_menu"><a v-bind:href="item.link ">{{ item.menu }}</a></li>     
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Tentang</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Tentang</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about-us" class="about-us">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right"
+          style="background-image: url(assets/img/tentang/6.jpg);"></div>
+          <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3 data-aos="fade-up">SEJARAH DESA WARUNGMENTENG</h3>
+              <p data-aos="fade-up">
+                Desa Warungmenteng Kecamatan Cijeruk Kabupaten Bogor adalah Desa  pemekaran sejak tahun   1983  yang   berada   pada ketinggian  500 m s/d 600 m diatas permukaan laut dengan suhu rata-rata berkisar antara 29 ˚ s/d 33 ˚ Celcius,  luas   wilayah   Desa    mencapai   228,78 Ha.   
+                Yang terdiri dari 3 (tiga) dusun, 8 (delapan) RW dan 25 (dua puluh lima) RT.
+              </p>
+              <br>
+              <p data-aos="fade-up">
+                Terbentuknya Desa Warungmenteng
+                Desa Warungmenteng  adalah Desa Pemekaran dari Desa Induk yaitu Desa Cijeruk, yang dimekarkan pada Tahun  1983 dengan luas wilayah Desa adalah  228,78 Ha.
+                Dalam Menjalankan Sistem Pemerintahan Desa, Desa Warungmenteng Memiliki Lima Bidang diantaranya:
+              </p>
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="bx bx-receipt"></i>
+                  <h4>Bidang Pemerintahanan</h4>
+                  <p>Melaksanakan tugas memverifikasi, mengoordinir, mempromosikan, memimpin, mengawas, membina, mengevaluasi dan mengendalikan pengkajian, penyiapan, perumusan dan penyusunan kebijakan di bidang Pemerintahan Desa</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Bidang Pembangunan</h4>
+                  <p>Pembangunan desa merupakan upaya meningkatkan kualitas hidup masyarakat desa, dalam rangka tersebut maka pemerintah desa harus menyusun perencanaan pembangunan desa berdasarkan pada kebutuhan dan aspirasi masyarakat, 
+                    serta memanfaatkan seluruh potensi atau sumber daya yang dimiliki sesuai kewenangannya dengan mengacu pada perencanaan pembangunan kabupaten/kota</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bx bx-images"></i>
+                  <h4>Bidang Pembinaan</h4>
+                  <p>embinaan kemasyarakatan merupakan salah satu program pemerintah dalam meningkatkan serta mengelola lembaga dan sumber daya manusia agar lebih baik dan bekerja sesuai dengan harapan. Pembinaan kemasyarakat dapat dilakukan dengan berbagai cara baik melalui pelatihan, 
+                    rapat, lomba, peringatan hari besar dan lain-lain.</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bx bx-shield"></i>
+                  <h4>Bidang Pemberdayaan</h4>
+                  <p>Pemberdayaan Masyarakat Desa adalah upaya mengembangkan kemandirian dan
+                    kesejahteraan masyarakat dengan meningkatkan pengetahuan, sikap, keterampilan,
+                    perilaku, kemampuan, kesadaran, serta memanfaatkan sumber daya melalui
+                    penetapan kebijakan, program, kegiatan, dan pendampingan yang sesuai dengan
+                    esensi masalah dan prioritas kebutuhan masyarakat Desa.</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bx bx-shield"></i>
+                  <h4>Bidang Penanggulangan Bencana, Keadaan Mendesak dan Darurat Lainnya</h4>
+                  <p>Penganggaran untuk Bidang Penanggulangan Bencana, Keadaan Darurat, dan Mendesak Desa menjadi kebutuhan yang dipenuhi untuk mengantisipasi dan/ atau menangani permasalahan yang muncul di Desa yang tidak dapat diprediksikan terjadi. Anggaran pada bidang ini akan menjadi “anggaran siap pakai” ketika Desa menghadapi situasi yang diakibatkan adanya bencana, 
+                    suatu keadaan darurat, dan suatu keadaan mendesak.</p>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Our Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Berikut  <strong>Struktur Organisasi</strong> DESA WARUNGMENTENG</h2>
+          <p>Berikut ini Struktur Organisasi Desa Warungmenteng Periode Tahun 2023-2029</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up">
+              <div class="member-img">
+                <img src="assets/img/tentang/Kades.png" class="img-fluid" alt="">
+      
+              </div>
+              <div class="member-info">
+                <h4>A. Zaenal Arifin, S.Ag</h4>
+                <span>Kepala Desa </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up">
+              <div class="member-img">
+                <img src="assets/img/tentang/Sekdes.jpeg" class="img-fluid" alt="">
+      
+              </div>
+              <div class="member-info">
+                <h4>Agil Asmi Farisi, S.H</h4>
+                <span>Sekretaris Desa</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up">
+              <div class="member-img">
+                <img src="assets/img/tentang/Pem.jpeg" class="img-fluid" alt="">
+      
+              </div>
+              <div class="member-info">
+                <h4>Abdul Hakim, SM</h4>
+                <span>Kepala Seksi Pemerintahan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up">
+              <div class="member-img">
+                <img src="assets/img/tentang/Pelayanan.jpeg" class="img-fluid" alt="">
+      
+              </div>
+              <div class="member-info">
+                <h4>Muhammad Alwi Farhan Jamil</h4>
+                <span>Kepala Seksi Pelayanan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up">
+              <div class="member-img">
+                <img src="assets/img/tentang/Kesra.jpeg" class="img-fluid" alt="">
+      
+              </div>
+              <div class="member-info">
+                <h4>Muhammad Razif Erlangga, AMD.Kom</h4>
+                <span>Kepala Seksi Kesejahteraan Rakyat</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up">
+              <div class="member-img">
+                <img src="assets/img/tentang/Umum.jpeg" class="img-fluid" alt="">
+      
+              </div>
+              <div class="member-info">
+                <h4>Nasrudin</h4>
+                <span>Kepala Urusan Umum dan Tata Usaha</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up">
+              <div class="member-img">
+                <img src="assets/img/tentang/Perencanaan.jpeg" class="img-fluid" alt="">
+      
+              </div>
+              <div class="member-info">
+                <h4>Alfiyan Ramadhan</h4>
+                <span>Kepala Urusan Perencanaan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up">
+              <div class="member-img">
+                <img src="assets/img/tentang/Keuangan.jpeg" class="img-fluid" alt="">
+      
+              </div>
+              <div class="member-info">
+                <h4>M. Farhan Maulana</h4>
+                <span>Kepala Urusan Keuangan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up">
+              <div class="member-img">
+                <img src="assets/img/tentang/Opeartor.jpeg" class="img-fluid" alt="">
+      
+              </div>
+              <div class="member-info">
+                <h4>Muhammad Fajar Sandika</h4>
+                <span>Opeartor</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Our Team Section -->
+
+
+  </main><!-- End #main -->
+
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Desa Warungmenteng</h3>
+            <p>
+              Cijeruk <br>
+              Bogor<br>
+              Jawa Barat <br><br>
+              <strong>Phone:</strong> 085780633132<br>
+              <strong>Email:</strong> warungmenteng83@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li v-for="item in list_menu"><i class="bx bx-chevron-right"></i> <a v-bind:href="item.link ">{{ item.menu }}</a></li> 
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Desa Warungmenteng</span></strong>. All Rights Reserved
+        </div>
+       
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  </div>
+  
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    const vueApp = new Vue({
+        el: '#vapp',
+        data: {
+          list_menu: [
+          { menu: 'Home', link: 'index.html' },
+          { menu: 'Tentang', link: 'tentang.html' },
+          { menu: 'Program Kerja', link: 'proker.html' },
+          { menu: 'Desa Presisi', link: 'desaPresisi.html' }
+        ]
+        }
+
+      })
+     
+  </script>
+
+
+</body>
+
+</html>

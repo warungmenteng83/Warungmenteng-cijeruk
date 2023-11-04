@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>DESA WARUNGMENTENG - Home</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Muli:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Vue.Js File -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+
+  <div id="vapp">
+    <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html">DESA WARUNGMENTENG</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li v-for="item in list_menu"><a v-bind:href="item.link ">{{ item.menu }}</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(assets/img/home/1.jpeg);">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>SELAMAT DATANG DI DESA WARUNGMENTENG</h2>
+              <p>Desa Warungmenteng Kecamatan Cijeruk Kabupaten Bogor adalah Desa  pemekaran sejak tahun   1983  yang   berada   pada ketinggian  500 m s/d 600 m diatas permukaan laut dengan suhu rata-rata berkisar antara 29 ˚ s/d 33 ˚ Celcius,  luas   wilayah   Desa    mencapai   228,78 Ha.   Yang terdiri dari 3 (tiga) dusun, 8 (delapan) RW dan 25 (dua puluh lima) RT.</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(assets/img/home/4.jpeg);">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>Terbentuknya Desa Warungmenteng</h2>
+              <p>Desa Warungmenteng  adalah Desa Pemekaran dari Desa Induk yaitu Desa Cijeruk, yang dimekarkan pada Tahun  1983 dengan luas wilayah Desa adalah  228,78 Ha.</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(assets/img/home/Sawah.jpeg);">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>Kondisi Geografis Desa Warungmenteng</h2>
+              <p>Desa Warungmenteng luas wilayahnya 228,78 Ha, terdiri dari 8 RW, 25 RT dan 3 Dusun. Yaitu Dusun I, Dusun II dan Dusun III, dengan batas-batas wilayah
+                Sebelah Utara Desa Cibalung dan Cipelang Kecamatan Cijeruk, Selatan Desa Ciadeg Kecamatan Cigombong dan Desa Caringin Kecamatan Caringin,
+              Timur Desa Ciadeg dan Ciburayut Kecamatan Cigombong, dan Barat Desa Cijeruk Kecamatan Cijeruk. Selain itu Jarak dari Desa Warungmenteng ke ibu kota Kecamatan 3 Km, jarak ke ibu kota Kabupaten Bogor 35 Km, 
+              jarak ke ibu kota Provinsi di Bandung 125 Km dan jarak ke ibu kota Negara di Jakarta 85 Km  </p>
+             
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-left-arrow" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-right-arrow" aria-hidden="true"></span>
+      </a>
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 text-center text-lg-center">
+            <h3>Visi dan Misi Desa Warungmenteng </h3>
+            <p> Kepala Desa Warungmenteng Bapak A. Zaenal Arifin, S.Ag Periode 2023-2029 memiliki Visi dan Misi berdasarkan kondisi saat ini dan tantangan yang akan dihadapi dalam 6 tahun 
+              mendatang serta dengan mempertimbangkan modal dasar yang dimiliki, maka Visi pembangunan Desa Warungmenteng adalah 
+              “Terwujudnya Desa Warungmenteng yang maju, bermartabat, sejahtera lahir dan batin”.</p>
+          </div>
+          
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <section id="about-us" class="about-us">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-justify justify-content-lg-start" data-aos="fade-right" 
+          style="background-image: url(assets/img/home/2.jpeg);"></div>
+          <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
+            <div class="content d-flex flex-column justify-content-justify">
+              <h3 data-aos="fade-up">Misi Kepala Desa Warungmenteng</h3>
+              <p data-aos="fade-up">
+                Selain penyusunan Visi juga telah ditetapkan misi-misi yang memuat sesuatu pernyataan yang harus dilaksanakan oleh desa, agar tercapainya visi desa tersebut. Visi berada diatas Misi. 
+                Pernyataan Visi kemudian dijabarkan ke dalam Misi agar dapat dioperasionalkan/dikerjakan. Sebagaimana penyusunan Visi, Misi pun dalam penyusunannya menggunakan pendekatan partisipatif dan pertimbangan potensi dan kebutuhan 
+                Desa Warungmenteng sebagaimana proses yang dilakukan, maka Misi Desa Warungmenteng yaitu sebagai berikut:
+              </p>
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Mewujudkan tata kelola pemerintahan desa yang bersih, 
+                      transparan dan akuntabel serta responsif terhadap situasi dan aspriasi masyarakat;</h4>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Mengelola program pembangunan berdasarkan azas kesetaraan dan berkeadilan dengan mengedepankan peran 
+                      aktif masyarakat untuk mendukung peningkatan ekonomi masyrakat</h4>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Meningkatkan mutu layanan pendidikan dan kesehatan masyarakat</h4>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Meningkatkan peran lembaga keagaamaan dalam membina 
+                      ketaqwaan terhadap Allah S.W.T dan menguatkan Ukhuwah Islamiyah</h4>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Meningkatkan potensi dan peran generasi muda agar dapat berbasis dalam dunia global</h4>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Mewujudkan ketertiban dan keamanan lingkungan</h4>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Memelihara dan mengembangkan terdiri dan seni budaya daerah</h4>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Meningkatkan pendapatan asli desa</h4>
+                </div>
+
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="fade-up">
+              <div class="icon"><i class="bi bi-house"></i></div>
+              <h4 class="title"><a href="tentang.html">Tentang Desa Warungmenteng</a></h4>
+              <p class="description">Desa Warungmenteng  adalah Desa Pemekaran dari Desa Induk yaitu Desa Cijeruk, yang dimekarkan pada Tahun  1983 dengan luas wilayah Desa adalah  228,78 Ha</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-card-checklist"></i></div>
+              <h4 class="title"><a href="proker.html">Program Kerja</a></h4>
+              <p class="description">Program dan Kegiatan Desa Warungmenteng Selama 2023-2029</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bi bi-newspaper"></i></div>
+              <h4 class="title"><a href="desaPresisi.html">Desa Presisi</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Desa Warungmenteng</h3>
+            <p>
+              Cijeruk <br>
+              Bogor<br>
+              Jawa Barat <br><br>
+              <strong>Phone:</strong> 085780633132<br>
+              <strong>Email:</strong> warungmenteng83@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li v-for="item in list_menu"><i class="bx bx-chevron-right"></i> <a v-bind:href="item.link">{{ item.menu }}</a></li>
+            </ul>
+          </div>
+
+      
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>DESA WARUNGMENTENG</span></strong>. All Rights Reserved
+        </div>
+       
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  </div>
+  
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  
+  <script>
+    const vueApp = new Vue({
+        el: '#vapp',
+        data: {
+          list_menu: [
+          { menu: 'Home', link: 'index.html' },
+          { menu: 'Tentang', link: 'tentang.html' },
+          { menu: 'Program Kerja', link: 'proker.html' },
+          { menu: 'Desa Presisi', link: 'desaPresisi.html' },
+        ]
+        }
+
+      })
+     
+  </script>
+
+</body>
+
+</html>
